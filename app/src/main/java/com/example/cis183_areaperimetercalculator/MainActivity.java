@@ -185,6 +185,22 @@ public class MainActivity extends AppCompatActivity {
                 setAreaAndPerimeterTriangle(et_main_height.getText().toString(),et_main_base.getText().toString(),et_main_side1.getText().toString(),et_main_side2.getText().toString(),et_main_side3.getText().toString());
             }
         });
+        et_main_base.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                setAreaAndPerimeterTriangle(et_main_height.getText().toString(),et_main_base.getText().toString(),et_main_side1.getText().toString(),et_main_side2.getText().toString(),et_main_side3.getText().toString());
+            }
+        });
         et_main_side1.addTextChangedListener(new TextWatcher() {
             @Override
             public void afterTextChanged(Editable s) {
@@ -269,7 +285,7 @@ public class MainActivity extends AppCompatActivity {
         double side1 = Double.parseDouble(str_side1);
         double side2 = Double.parseDouble(str_side2);
         double side3 = Double.parseDouble(str_side3);
-
+        //testing
         double area = (height*base)/2;
         double perimeter = side1+side2+side3;
         String str_output = ("Area: "+area+"  Perimeter: "+perimeter);

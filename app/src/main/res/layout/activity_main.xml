@@ -49,7 +49,7 @@
         android:id="@+id/cont_main_squareRectangle"
         android:layout_width="408dp"
         android:layout_height="372dp"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -228,7 +228,7 @@
         android:id="@+id/cont_main_triangle"
         android:layout_width="386dp"
         android:layout_height="501dp"
-        android:visibility="visible"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -378,7 +378,7 @@
             app:layout_constraintHorizontal_bias="0.401"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.232" />
+            app:layout_constraintVertical_bias="0.236" />
 
         <TextView
             android:id="@+id/tv_main_side_input1"
